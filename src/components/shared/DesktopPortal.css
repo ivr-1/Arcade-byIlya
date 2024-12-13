@@ -1,0 +1,114 @@
+.loading-screen {
+    color: white;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 2rem;
+
+
+}
+
+.base-container-desktop {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.buttons-desktop {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-desktop .horizontal {
+    background-color: cadetblue;
+    display: flex;
+}
+
+.auxilary-buttons-desktop {
+    background-color: green;
+}
+
+ .screen-desktop {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 60%;
+    font-family: "Press Start 2P", system-ui;
+    color: black;
+    text-align: center;
+    background-color: #cccccc;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.exit-machine {
+    padding: 10px;
+    text-decoration: none;
+    background: #3f3f3f;
+    border-radius: 11px;
+    filter:drop-shadow(00px 00px 10px black);
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: rgb(188, 188, 188);
+    position: absolute;
+    bottom: 7vh;
+    font-family: "Press Start 2P", system-ui;
+    opacity: 0;
+    animation: scaleIn 0.8s ease-out forwards;
+}
+
+.exit-machine:hover {
+    filter:drop-shadow(0px 0px 10px rgb(195, 195, 195));
+    color: white;
+    opacity: 1;
+}
+
+.side-buttons-container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-button {
+    background-color: rgba(255, 255, 255, 0);
+    width: 10vw;
+    font-size: 5rem;
+    border: none;
+    color: rgba(255, 255, 255, 0);
+    transition: color 0.1s ease, background-color 0.3s ease;
+    font-family: "Press Start 2P", system-ui;
+
+}
+
+
+.side-button:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.2);
+    filter:drop-shadow(0px 0px 10px rgb(48, 47, 47));
+    cursor: pointer;
+    width: 10vw;
+    font-size: 5rem;
+    border: none;
+}
+
+
+@keyframes scaleIn {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1) perspective(500px) rotateX(30deg);;
+      opacity: 0.8;
+    }
+  }
+  

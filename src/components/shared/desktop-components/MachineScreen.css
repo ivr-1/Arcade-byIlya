@@ -1,0 +1,115 @@
+.MachineScreenContainer {
+    background-color: #181140;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    /* border: 2px solid #00f; */
+  }
+
+  .logo {
+    width: 100px; 
+    height: auto; 
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 100%;
+    height: 100%;
+    animation: pixelReveal 1s steps(8, end) forwards;
+    object-fit: contain; 
+  }
+  
+  .MachineScreenContainer h1 {
+    font-family: 'Press Start 2P', monospace;
+    animation: pixelReveal 1s steps(8, end) forwards;
+    color: #fff;
+    font-size: 2.1rem;
+    margin-bottom: 40px;
+  }
+  
+  .MachineScreenContainer .text {
+    animation: simpleFadeIn 0.8s ease-out 1.2s both;
+    font-family: 'Press Start 2P', monospace;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 2;
+    text-align: center;
+  }
+  
+  .MachineScreenContainer .arrow {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #fff;
+    margin: 10px 5px;
+  }
+
+.MachineScreenContainer .letter {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #fff;
+  margin: 10px 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  font-size: 1.2rem
+}
+
+
+  .MachineScreenContainer .arrow-horizontal {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #fff;
+    margin: 10px 5px;
+    transform: rotate(90deg);
+  }
+  
+  .MachineScreenContainer p {
+    font-family: 'Press Start 2P', monospace;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 40px;
+    animation: 
+    simpleFadeIn 0.3s ease-out 2.5s both,
+    pixelBlink 2s infinite 3.3s;
+  }
+  
+  .MachineScreenContainer .made-by {
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    font-family: 'Press Start 2P', monospace;
+    color: #fff;
+    font-size: 0.5rem;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+@keyframes pixelReveal {
+    0% { clip-path: inset(0 100% 0 0); }
+    100% { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes simpleFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes pixelBlink {
+    0%, 20% { opacity: 0; }
+    21%, 100% { opacity: 1; }
+}
+

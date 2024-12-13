@@ -1,0 +1,131 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+}
+
+.app-container {
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container-desktop {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.game-container-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    /* background-color: red; */
+  }
+
+.snake-stats {
+    width: 100%;
+    padding: 0.5vh;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+    -webkit-touch-callout: none;
+}
+
+.snake-stats-desktop {
+    padding: 0.5vh;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 0.8rem;
+    color: rgb(216, 216, 216);
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+    -webkit-touch-callout: none;
+}
+
+.tetris-stats {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+    -webkit-touch-callout: none;
+}
+
+.tetris-stats .tetris-level {
+    padding: 0.5vh;
+    margin-bottom: 1vh;
+    border: 1px solid black;
+}
+
+.tetris-stats-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(216, 216, 216);
+    margin-left: 100px;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 0.8rem;
+
+}
+
+.tetris-stats-desktop .tetris-level {
+    background-color: rgba(27, 223, 109, 0.2);;
+    padding: 1vh;
+    margin-bottom: 3vh;
+    border: 1px solid rgba(255,255,255, 0.2);
+    border-radius: 2px;
+    font-size: 1rem;
+    
+}
+
+
+.pong-stats-desktop {
+    padding: 0.8vh;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 0.8rem;
+    color: rgb(216, 216, 216);
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+    -webkit-touch-callout: none;
+}
+
+.pong-stats {
+    padding: 0.5vh;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+    -webkit-touch-callout: none;
+}
